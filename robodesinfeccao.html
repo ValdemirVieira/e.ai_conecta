@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/robodesinfeccao.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-        
+    
     <header>
         <ul id="dropdown2" class="dropdown-content">
             <li><a href="loginCliente.html">Cliente</a></li>
@@ -42,16 +42,16 @@
         </ul>
         <nav>
             <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="./image/logonovo2.svg" alt="logomarca" class="logoMenu"></a>
+                <a href="index.html" class="brand-logo"><img src="./image/logonovo2.png" alt="logomarca" class="logoMenu"></a>
                 <a href="index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
                     <li><a href="#produto">Produto</a></li>
                     <li><a href="#servicos">O que é e.Aí Conecta?</a></li>
                     <!-- Dropdown Trigger -->
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Login<i class="material-icons right">arrow_drop_down</i></a></li>
 
-                    <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Conheça mais sobre Parceiro!</a></li>
+                    <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro!</a></li>
                     
                 </ul>
             </div>
@@ -59,110 +59,19 @@
         </div>
     </header>
 
-    <section id="home">
-        <div class="bloco-home">
-            <div class="row">
-                <div class="col s12 m6 l7">
-                    <div class="card-apresentacao section">
-                        <h1>Serviços inteligentes a sua disposição</h1>
-                    </div>
-                </div>
-                <div class="col s12 m6 l5">
-                    <div class="card-robo">
-                        <img class="responsive-img" src="./image/robo.svg">
-                    </div>
-                </div>
-            </div>              
-        </div>
-    </section> 
-	
-	 <section id="produto">
-        <div class="bloco">
-            <div class="row">
-				<h1 class="center">PRODUTOS</h1>
-                <main class="cards">
-					<section class="card contact col s12 m12 l3">
-						<div class="icon">
-							<img src="image/img/robo.png" alt="Robô">
-						</div>
-						<h3>Desinfecção</h3>
-						<span>Garantir a segurança das pessoas em ambientes livres
-						de vírus, bactérias e fungos por meio da desinfecção
-						robótica inteligente</span>
-						<button onclick="window.location.href = 'robodesinfeccao.html#produto'">Solicite Agora!</button>
-					</section>
-					<section class="card shop col s12 m12 l3">
-						<div class="icon">
-							<img src="image/img/nariz.png" alt="Nariz">
-						</div>
-						<h3>Analises de Odores</h3>
-						<span>Elevar e garantir, por meio da Inteligência Artificial, os
-						padrões de qualidade nas análises de odores,
-						oferecendo portabilidade, conectividade e velocidade
-						nos resultados</span>
-						<button onclick="window.location.href = 'ClienteParceiro.html'">Solicite Agora!</button>
-					</section>
-					<section class="card about col s12 m12 l3">
-						<div class="icon">
-							<img src="image/img/contagemFruto.png" alt="Contador">
-						</div>
-						<h3>Contagem Inteligente</h3>
-						<span>Reconhecimento de padrões com Inteligência Artificial
-						para processamento de imagens e contagem
-						automática de objetos</span>
-						<button onclick="window.location.href = 'ClienteParceiro.html'">Solicite Agora!</button>
-				</main>
-            </div>              
-        </div>
-    </section> 
-	
-	
-	
-    <section id="servicos">
-        <div class="bloco">
-            <div class="row">
-                <div class="col s12 m6 l5">
-                    <div class="robo">
-                        <img class="responsive-img" src="./image/Imagem2.png">
-                    </div>
-                </div>
-                <div class="col s12 m6 l7">
-                    <div class="card-eai">
-                        <h2>O que é e.Aí Conecta?</h2>
-                        <h5>Fornecemos serviços com robôs altamente tecnológicos, capazes de realizar o trabalho de forma eficaz e rápida, aumentando a produtividade e reduzindo custos.</h5>
-                    </div>
-                </div>
-            </div>
+    <main>
 
-            <div class="row">
-                <div class="video">
-                    <video class="responsive-video" controls>
-                        <source src="Video/videoplayback.mp4" type="video/mp4">
-                    </video>
-                    <img class="responsive-img" src="./image/imagem3.png">
+        <section class="apresentacao center">
+                <div class="exposicao">
+                    <img src="./image/robo.svg" alt="Robo de desinfecção">
+                    <iframe width="370" height="175" src="https://www.youtube.com/embed/eTRbofUK10g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil debitis eum officia deserunt numquam, aliquid, maxime nesciunt alias eaque cumque asperiores? Sint aliquid eaque iure ipsa velit ea, voluptatem fuga.</p>
                 </div>
-            </div>              
-        </div>  
-    </section>
+        </section>
 
-    <section id="depoimentos">
-        <div class="frasedepoimento">
-            <h1 class="center">Depoimentos</h1>
-        </div>
-        <div class="areadepoimento">
-            <div class="depoimento">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam assumenda optio dicta, quasi quos nemo corrupti dolorum ut illo pariatur alias nulla eaque, tempore totam reprehenderit? Obcaecati odit assumenda inventore quas nemo. Ea, atque in ipsam autem harum cumque assumenda, hic enim recusandae dignissimos, itaque soluta id excepturi sint.</p>
-                <img src="./image/depoimento1.png" alt="Depoimento1">
-            </div>
-            <div class="depoimento">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem corporis amet ex, ad similique porro omnis distinctio at molestiae placeat. Distinctio, rerum blanditiis? Eius quis non reprehenderit officiis ducimus ex quasi vero accusamus perferendis in tempora optio cupiditate, soluta deleniti dicta nulla atque hic voluptas doloribus eum beatae alias! Consequatur.</p>
-                <img src="./image/depoimento2.png" alt="Depoimento2">
-            </div>
-        </div>
-        
-    </section>
-	
-	<footer class="page-footer">
+    </main>
+
+    <footer class="page-footer">
         <div class="containe">
           <div class="row">
             <div class="col l4 m4 s12 endereco">
@@ -205,12 +114,10 @@
           </div>
         </div>
       </footer>
-	  
-
+    
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
-
 </body>
 </html>
