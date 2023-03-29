@@ -31,7 +31,7 @@ main.cards section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: white;
+    background: rgb(67, 4, 212);
     padding: 1.5rem 1.7rem;
     border-radius: 10px;
     max-height: 468px;
@@ -71,18 +71,18 @@ main.cards section.card button {
     cursor: pointer;
     font-size: 80%;
     font-weight: 500;
-    color: #fff;
+    color:#e96006;
     margin-bottom: 16px 0;
 }
 
 main.cards section.card.contact button {
-    background: linear-gradient(to right, #ec2f2f, #FFC7D9);
+    background: linear-gradient(to right, #e96006);
 }
 main.cards section.card.shop button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    background: linear-gradient(to right,#e96006 );
 }
 main.cards section.card.about button {
-    background: linear-gradient(to right, #2e15cc, #c5bef1);
+    background: linear-gradient(to right, #e96006);
 }
 
 main.cards section.card.contact {
