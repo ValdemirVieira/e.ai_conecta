@@ -90,7 +90,7 @@
                         Qual local do serviço?
                     </h5>
                     <label>
-                        <input type="radio" name="grupo1" value="valor1"> Sala comercial <br>
+                        <input class="olaaaa" type="radio" name="grupo1" value="valor1"> Sala comercial <br>
                         <input type="radio" name=grupo1 value=valor2> Apartamento <br>
                         <input type="radio" name=grupo1 value=valor3> Galpao <br>
                         <input type="radio" name=grupo1 value=valor4> Chácara<br>
@@ -98,12 +98,18 @@
                     </label>
                 </div>
                 <div class="card-agendamento">
-                    <h5>Quantos metros seram desinfectados?</h5>
-                    <input type="number" id="metros" placeholder="Metros²">
-                    <div class="pagarvalor">
-                        <h5>O valor da desinfecção sera:</h5>
-                        <input type="text" name="valorpago" id="valorpago">
-                    </div>
+                        <div class="metros-agendamento">
+                            <form>
+                            <h5>Quantos metros seram desinfectados?</h5>
+
+                                <input type="text" id="metros" name="metros" class="metros" placeholder="Metros²" onkeypress="receberValor()">
+                            </form>   
+                        </div>
+                        
+                        <div class="pagarvalor">
+                            <h5>O valor da desinfecção sera:</h5>
+                            <p>R$ <span id="valor_metros"></span></p>
+                        </div>
                 </div>
             </div>
             <div class="cards-agendamento">
@@ -165,6 +171,7 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./js/preço.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
