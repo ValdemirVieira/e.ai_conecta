@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    color: #434343;
+    color: #ffffff;
 
     font-size: 17px;
 }
@@ -31,7 +31,7 @@ main.cards section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: white;
+    background: rgb(11, 70, 230);
     padding: 1.5rem 1.7rem;
     border-radius: 10px;
     max-height: 468px;
@@ -71,28 +71,28 @@ main.cards section.card button {
     cursor: pointer;
     font-size: 80%;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 16px 0;
 }
 
 main.cards section.card.contact button {
-    background: linear-gradient(to right, #ec2f2f, #FFC7D9);
+    background: #e96006;
 }
 main.cards section.card.shop button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    background:#e96006;
 }
 main.cards section.card.about button {
-    background: linear-gradient(to right, #2e15cc, #c5bef1);
+    background: #e96006;
 }
 
 main.cards section.card.contact {
-    box-shadow: 20px 20px 50px -30px #ea4a4a;
+    box-shadow: 20px 20px 50px -30px #f5f2f2;
 }
 main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -30px #3317a4;
+    box-shadow: 20px 20px 50px -30px #f8f8f8;
 }
 main.cards section.card.about {
-    box-shadow: 20px 20px 50px -30px #3415e2;
+    box-shadow: 20px 20px 50px -30px #f7f7f7;
 }
 
 @media screen and (max-width: 720px) {
