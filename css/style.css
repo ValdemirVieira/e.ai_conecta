@@ -205,7 +205,7 @@ main.cards section.card button:hover {
 }
 
 main.cards section.card {
-    box-shadow: 2px 2px 20px 2px white;
+    box-shadow: 0.5px 0.5px 3px 1px white;
 }
 
 /***** O que é eAi? *****/
@@ -296,7 +296,7 @@ main.cards section.card {
     margin-bottom: 2px;
     margin-left: 20px;
     margin-right: 20px; 
-    box-shadow: 2px 2px 20px 2px white;
+    box-shadow: 0.5px 0.5px 3px 1px white;
 }
 .depoimento:last-child{
     margin-left: 0;

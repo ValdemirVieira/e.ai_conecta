@@ -25,9 +25,9 @@
             <li><a href="loginParceiro.html">Parceiro</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#produto">Produto</a></li>
-            <li><a href="#servicos">O que é e.Aí Conecta?</a></li>
+            <li><a href="./index.html#home">Inicio</a></li>
+            <li><a href="./index.html#produto">Produto</a></li>
+            <li><a href="./index.html.#servicos">O que é e.Aí Conecta?</a></li>
             <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Login<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro</a></li>
             
@@ -45,9 +45,9 @@
                 <a href="index.html" class="brand-logo"><img src="./image/logonovo2.png" alt="logomarca" class="logoMenu"></a>
                 <a href="index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="#produto">Produto</a></li>
-                    <li><a href="#servicos">O que é e.Aí Conecta?</a></li>
+                    <li><a href="./index.html#home">Inicio</a></li>
+                    <li><a href="./index.html#produto">Produto</a></li>
+                    <li><a href="./index.html#servicos">O que é e.Aí Conecta?</a></li>
                     <!-- Dropdown Trigger -->
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Login<i class="material-icons right">arrow_drop_down</i></a></li>
 
@@ -89,35 +89,63 @@
                     <h5>
                         Qual local do serviço?
                     </h5>
-                    <label>
-                        <input class="olaaaa" type="radio" name="grupo1" value="valor1"> Sala comercial <br>
-                        <input type="radio" name=grupo1 value=valor2> Apartamento <br>
-                        <input type="radio" name=grupo1 value=valor3> Galpao <br>
-                        <input type="radio" name=grupo1 value=valor4> Chácara<br>
-                        <input type="radio" name=grupo1 value=valor5> outro
-                    </label>
+                    
+                    <form class="radio-agendamento">
+                        <div class="customisando">
+                            <p>
+                                <input type="radio" name=locais id="sala_comercial">
+                                <label for="sala_comercial">Sala comercial</label>
+                            </p>
+                            <p>
+                                <input type="radio" name=locais id="apartamento">
+                                <label for="apartamento">Apartamento</label>
+                            </p>
+                            <p>
+                                <input type="radio" name=locais id="galpao">
+                                <label for="galpao">Galpão</label>
+                            </p>
+                            <p>
+                                <input type="radio" name=locais id="chacara">
+                                <label for="chacara">Chacara</label>
+                            </p>
+                            <p>
+                                <input type="radio" name=locais id="casa">
+                                <label for="casa">Casa</label>
+                            </p>
+                            <p>
+                                <input type="radio" name=locais id="outro">
+                                <label for="outro">Outro</label>
+                            </p>
+                        </div>
+                        
+                    </form>
                 </div>
                 <div class="card-agendamento">
                         <div class="metros-agendamento">
                             <form>
-                            <h5>Quantos metros seram desinfectados?</h5>
-
-                                <input type="text" id="metros" name="metros" class="metros" placeholder="Metros²" oninput="receberValor()">
+                            <h5>Quais são as medidas do local?</h5>
+                                <input type="number" id="metros" name="metros" class="metros" placeholder="Metros²" oninput="receberValor()">
                             </form>   
                         </div>
                         
                         <div class="pagarvalor">
-                            <h5>O valor da desinfecção sera:</h5>
+                            <h5>O valor da desinfecção será:</h5>
                             <p>R$ <span id="valor_metros"></span></p>
                         </div>
                 </div>
             </div>
             <div class="cards-agendamento">
                 <div class="card-agendamento">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nostrum tempora fugit dolores voluptatibus laudantium asperiores error amet quod reiciendis obcaecati possimus eaque, eum accusamus, saepe rem dolore expedita minus.
+                    <div>
+                        <h5>Quando voce pretende realizar o serviço?</h5>
+                    </div>
                 </div>
                 <div class="card-agendamento">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nostrum tempora fugit dolores voluptatibus laudantium asperiores error amet quod reiciendis obcaecati possimus eaque, eum accusamus, saepe rem dolore expedita minus.
+                    <div class="agendamento_informaçoes">
+                        <h5>Informações adicionais</h5>
+                        <textarea name="infoadicionais" id="infoadicionais" cols="30" rows="10" placeholder="Coloque aqui, Informações relevantes: ponto de referencia, dificuldades que possivelmente possam ter, etc..." style="resize: none;"></textarea>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -171,7 +199,7 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="./js/preço.js"></script>
+    <script src="./js/preco.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
