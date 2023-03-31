@@ -1,4 +1,4 @@
-let ola = document.getElementById('metros');
+let pegandoValor = document.getElementById('metros');
 
 function receberValor(){
    var emMetros = document.getElementById("metros").value;
@@ -7,5 +7,4 @@ function receberValor(){
 
    //enviar dados para arquivo utilizando ID
    document.getElementById("valor_metros").innerHTML = calc
-   
 }
