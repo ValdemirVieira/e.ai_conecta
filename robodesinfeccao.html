@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<!-- Import Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
+    
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/robodesinfeccao.css">
+    <link rel="stylesheet" href="./css/aluguelrobos.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
@@ -121,23 +121,27 @@
                     </form>
                 </div>
                 <div class="card-agendamento">
-                        <div class="metros-agendamento">
-                            <form>
-                            <h5>Quais são as medidas do local?</h5>
-                                <input type="number" id="metros" name="metros" class="metros" placeholder="Metros²" oninput="receberValor()">
-                            </form>   
-                        </div>
+                    <div class="metros-agendamento">
+                        <form>
+                        <h5>Quais são as medidas do local?</h5>
+                            <input type="number" id="metros" name="metros" class="metros" placeholder="Metros²" oninput="receberValor()">
+                        </form>   
+                    </div>
                         
-                        <div class="pagarvalor">
-                            <h5>O valor da desinfecção será:</h5>
-                            <p>R$ <span id="valor_metros"></span></p>
-                        </div>
+                    <div class="pagarvalor">
+                        <h5>O valor da desinfecção será:</h5>
+                        <p>R$ <span id="valor_metros"></span></p>
+                    </div>
                 </div>
             </div>
             <div class="cards-agendamento">
                 <div class="card-agendamento">
-                    <div>
+                    <div class="dia-agendamento">
                         <h5>Quando voce pretende realizar o serviço?</h5>
+                        <div class="data-agendamento">
+                            <p> Data: <input type="date"></p>
+                            <p> Hora: <input type="time"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="card-agendamento">
@@ -149,9 +153,33 @@
                 </div>
             </div>
         </section>
-        
+        <section class="dados-cliente">
+            <div class="dados-importantes">
+                <div class="dados-localizar">
+                    <form  class="form-dados">
+                        <h5>Dados Pessoais</h5>
+                        <input type="text" id="nome" class="nome" placeholder="Nome">
+                        <input type='text' id="cpfcnpj" class="cpfcnpj" name='cpfcnpj' onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()' placeholder="CPF/CNPJ" maxlength="18">
+                        <input type="text" id="pagamento" class="pagamento" placeholder="Formas de pagamento">
+                    </form>
+                </div>
+                <div class="dados-localizar">
+                    <form class="form-dados">
+                        <h5>Endereço</h5>
+                        <input type="text" id="cep" class="cep" placeholder="CEP" onkeyup="handleZipCode(event)" maxlength="9">
+                        <input type="text" id="logradouro" class="logradouro" placeholder="Logradouro">
+                        <input type="text" id="numero" class="numero" placeholder="Numero">
+                        <input type="text" id="bairro" class="bairro" placeholder="Bairro">
+                        <input type="text" id="referencia" class="referencia" placeholder="Ponto de referencia">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="enviar">
+            <button type="submit">agendar serviço</button>
+        </div>
     </main>
-
+    
     <footer class="page-footer">
         <div class="containe">
           <div class="row">
@@ -199,7 +227,9 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
     <script src="./js/preco.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/mascaras.js"></script>
 </body>
 </html>

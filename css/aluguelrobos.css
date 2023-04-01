@@ -76,20 +76,32 @@
     color: white;
     font-size: 20px;
 }
-.radio-agendamento input[type="radio"] + label::before{
+.radio-agendamento input[type=radio] + label::before{
     content: "";
     position: absolute;
     border: solid 2px;
     background-color: white;
 }
 
-.customisando input[type="radio"]:checked + label:before{
+input[type=radio]:checked + label::before {
     content: "";
-    color: #f3f3f3;
     font-size: 30px;
     text-align: center;
     line-height: 18px;
 }
+input[type=radio]:checked + label::after{
+    background-color: #F34E15;
+    border: white;
+}
+.data-agendamento input{
+    width: 125px !important;
+    border-bottom: none !important;
+    padding-left: 10px;
+}
+.data-agendamento input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(100%) ;
+  }
 .agendamento_informaçoes textarea{
     background-color: white;
     border-radius: 10px;
@@ -97,6 +109,7 @@
     height: 200px;
     border: white;
     color: gray;
+    margin-bottom: 5px;
 }
 .agendamento_informaçoes textarea::placeholder{
     color: gray;
@@ -105,4 +118,76 @@
     box-shadow: none;
     border: 0 none;
     outline: 0;
+}
+/**Dados **/
+.dados-cliente{
+    background: linear-gradient(180deg, #455B9C 0%,#132C83 70%);
+    margin-top: 85px;
+    margin-bottom: 70px;
+}
+.dados-importantes{
+    padding: 20px;
+    
+    background: #1B3C93;
+    box-shadow: 0.5px 0.5px 3px 1px white;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-around;
+}
+.dados-localizar{
+    width: 620px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.dados-localizar:last-child{
+    margin-left: none;
+}
+.dados-localizar:first-child{
+    margin-right: none;
+}
+.form-dados input{
+    border: 1px solid white !important;
+    border-radius: 20px !important;
+    background-color: white !important;
+    width: 450px  !important;
+    color: black;
+    padding-left: 10px !important;
+}
+#cep{
+    width: 180px !important;
+}
+#numero{
+    width: 150px !important;
+    margin-right: 10px;
+}
+#bairro{
+    width: 178px !important;
+}
+#cpfcnpj{
+    width: 160px !important;
+    margin-right: 10px;
+}
+#pagamento{
+    width: 180px !important;
+}
+.dados-localizar input::placeholder{
+    color: black;
+}
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px ;
+}
+.enviar button{
+    text-transform: uppercase;
+    background-color: #F34E15;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.enviar button:hover{
+    background-color: #da4828;
 }
