@@ -1,4 +1,4 @@
-/**Apresentaçao **/
+/**Apresentacao **/
 *{
     color: white;
 }
@@ -11,6 +11,9 @@
 .exposicao{
     display: flex;
     justify-content: center;
+}
+.exposicao-video iframe{
+    border-radius: 10px;
 }
 .exposicao-img{
     height: 670;
@@ -102,7 +105,7 @@ input[type=radio]:checked + label::after{
     cursor: pointer;
     filter: invert(100%) ;
   }
-.agendamento_informaçoes textarea{
+.agendamento_informacoes textarea{
     background-color: white;
     border-radius: 10px;
     padding: 5px;
@@ -111,10 +114,10 @@ input[type=radio]:checked + label::after{
     color: gray;
     margin-bottom: 5px;
 }
-.agendamento_informaçoes textarea::placeholder{
+.agendamento_informacoes textarea::placeholder{
     color: gray;
 }
-.agendamento_informaçoes textarea:focus{
+.agendamento_informacoes textarea:focus{
     box-shadow: none;
     border: 0 none;
     outline: 0;
@@ -191,7 +194,7 @@ input[type=radio]:checked + label::after{
 }
 
 @media only screen and (max-width: 601px) {
-    
+    /**Apresentação**/
     .exposicao{
         display: flex;
         flex-direction: column;
@@ -231,6 +234,7 @@ input[type=radio]:checked + label::after{
         padding: 0;
         text-align: center;
     }
+    /**Agendamento**/
     .agendamento{
         margin-top: 0;
         padding-top: 10px;
@@ -273,3 +277,52 @@ input[type=radio]:checked + label::after{
     }
 }
 
+@media only screen and (min-width: 602px) and (max-width: 991px) {
+    /**Apresentacao**/
+    .exposicao{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .exposicao-img{
+        padding-bottom: 20px;
+    }
+    .exposicao-direcao{
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .exposicao-video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .exposicao-texto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+    }
+    .exposicao-texto p{
+        text-align: center;
+        width: 80%;
+    }
+
+    /**Agendamento**/
+    .agendamento{
+        padding-top: 50px;
+    }
+
+    .agendamento-titulo h1{
+        font-size: 35px;
+    }
+    .card-agendamento h5{
+        font-size: 20px;
+    }
+    .agendamento_informacoes textarea {
+        height: 170px;
+    }
+}
