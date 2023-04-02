@@ -135,7 +135,7 @@ input[type=radio]:checked + label::after{
     justify-content: space-around;
 }
 .dados-localizar{
-    width: 620px;
+    width: 50%;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -149,7 +149,7 @@ input[type=radio]:checked + label::after{
     border: 1px solid white !important;
     border-radius: 20px !important;
     background-color: white !important;
-    width: 450px  !important;
+    width: 450px;
     color: black;
     padding-left: 10px !important;
 }
@@ -160,9 +160,7 @@ input[type=radio]:checked + label::after{
     width: 150px !important;
     margin-right: 10px;
 }
-#bairro{
-    width: 178px !important;
-}
+
 #cpfcnpj{
     width: 160px !important;
     margin-right: 10px;
@@ -191,3 +189,87 @@ input[type=radio]:checked + label::after{
 .enviar button:hover{
     background-color: #da4828;
 }
+
+@media only screen and (max-width: 601px) {
+    
+    .exposicao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .exposicao-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .exposicao-img img{
+        width: 60% ;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .exposicao-direcao{
+        margin: 0;
+        padding: 0;
+    }
+    .exposicao-video{
+        display: none;
+    }
+    .exposicao-texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+    .exposicao-texto p{
+        font-size: 15px;
+        width: 70%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .agendamento{
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .agendamento-titulo h1{
+        font-size: 40px;
+    }
+    .cards-agendamento{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card-agendamento{
+        width: 80%;
+    }
+    .card-agendamento .metros-agendamento form input, .pagarvalor p{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px ;
+        margin-top: 25px ;
+    }
+    .dados-cliente{
+        padding-top: 5px;
+    }
+    .dados-importantes{
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+    .dados-localizar{
+        width: 90%;
+        padding-right: 20px;
+        align-items: center;
+    }
+    .form-dados h5{
+        margin-bottom: 20px;
+    }
+}
+
