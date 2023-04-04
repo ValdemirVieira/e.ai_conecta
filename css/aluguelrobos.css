@@ -1,0 +1,338 @@
+/**Apresentacao **/
+*{
+    color: white;
+}
+.apresentacao{
+    padding-top: 70px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,#a2aed4 -0%, #132C83 15%, #2A438C 80%);
+}
+.exposicao{
+    display: flex;
+    justify-content: center;
+}
+.exposicao-video iframe{
+    border-radius: 10px;
+}
+.exposicao-img .desinfeccao{
+    height: 670;
+    margin-right: 20px;
+}
+.exposicao-direcao{
+    flex-direction: column;
+    margin-left: 20px;
+}
+.apresentacao .exposicao-texto{
+    width: 550px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.agendamento{
+    padding-top: 70px;
+    background: linear-gradient(180deg, #2A438C 0%,#132C83 90%,  #455B9C 100%);
+}
+/**Agendamento**/
+.agendamento-titulo h1{
+    text-align: center;
+    align-items: center;
+}
+.cards-agendamento{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-agendamento{
+    background: #1B3C93;
+    border-radius: 12px;
+    padding: 30px 20px 0 20px;
+    width: 600px;  
+    height: 300px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    box-shadow: 0.5px 0.5px 3px 1px white;
+}
+#metros{
+    width: 150px;
+    border-radius: 5px;
+    height: 30px;
+    background:white;
+    margin-top: 5px;
+    color: gray;
+    padding-left: 5px;
+}
+.card-agendamento .metros-agendamento input::placeholder{
+    color: grey;
+    font-size: 12px;
+}
+.pagarvalor p span{
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    padding: 1px 2px;
+    margin-left: 3px;
+    border-radius: 5px;
+    color: grey;
+}
+
+.radio-agendamento p label{
+    color: white;
+    font-size: 20px;
+}
+.radio-agendamento input[type=radio] + label::before{
+    content: "";
+    position: absolute;
+    border: solid 2px;
+    background-color: white;
+}
+
+input[type=radio]:checked + label::before {
+    content: "";
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+input[type=radio]:checked + label::after{
+    background-color: #F34E15;
+    border: white;
+}
+.data-agendamento input{
+    width: 125px !important;
+    border-bottom: none !important;
+    padding-left: 10px;
+}
+.data-agendamento input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(100%) ;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+.agendamento_informacoes textarea{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    height: 200px;
+    border: white;
+    color: gray;
+    margin-bottom: 5px;
+}
+.agendamento_informacoes textarea::placeholder{
+    color: gray;
+}
+.agendamento_informacoes textarea:focus{
+    box-shadow: none;
+    border: 0 none;
+    outline: 0;
+}
+/**Dados **/
+.dados-cliente{
+    background: linear-gradient(180deg, #455B9C 0%,#132C83 70%);
+    margin-top: 85px;
+    margin-bottom: 70px;
+}
+.dados-importantes{
+    padding: 20px;
+    
+    background: #1B3C93;
+    box-shadow: 0.5px 0.5px 3px 1px white;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-around;
+}
+.dados-localizar{
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.dados-localizar:last-child{
+    margin-left: none;
+}
+.dados-localizar:first-child{
+    margin-right: none;
+}
+.form-dados input{
+    border: 1px solid white !important;
+    border-radius: 20px !important;
+    background-color: white !important;
+    width: 450px;
+    color: black;
+    padding-left: 10px !important;
+}
+#cep{
+    width: 180px !important;
+}
+#numero{
+    width: 150px !important;
+    margin-right: 10px;
+}
+
+#cpfcnpj{
+    width: 160px !important;
+    margin-right: 10px;
+}
+#pagamento{
+    width: 180px !important;
+}
+.dados-localizar input::placeholder{
+    color: black;
+}
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px ;
+}
+.enviar button{
+    text-transform: uppercase;
+    background-color: #F34E15;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.enviar button:hover{
+    background-color: #da4828;
+}
+
+@media only screen and (max-width: 602px) {
+    /**Apresentação**/
+    .exposicao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .exposicao-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .exposicao-img .desinfeccao{
+        width: 60% ;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .exposicao-direcao{
+        margin: 0;
+        padding: 0;
+    }
+    .exposicao-video{
+        display: none;
+    }
+    .exposicao-texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+    .exposicao-texto p{
+        font-size: 15px;
+        width: 70%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    /**Agendamento**/
+    .agendamento{
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .agendamento-titulo h1{
+        font-size: 40px;
+    }
+    .cards-agendamento{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card-agendamento{
+        width: 80%;
+    }
+    .card-agendamento .metros-agendamento form input, .pagarvalor p{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px ;
+        margin-top: 25px ;
+    }
+    .dados-cliente{
+        padding-top: 5px;
+    }
+    .dados-importantes{
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+    .dados-localizar{
+        width: 90%;
+        padding-right: 20px;
+        align-items: center;
+    }
+    .form-dados h5{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 602px) and (max-width: 991px) {
+    /**Apresentacao**/
+    .exposicao{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .exposicao-img{
+        padding-bottom: 20px;
+    }
+    .exposicao-direcao{
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .exposicao-video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .exposicao-texto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+    }
+    .exposicao-texto p{
+        text-align: center;
+        width: 80%;
+    }
+
+    /**Agendamento**/
+    .agendamento{
+        padding-top: 50px;
+    }
+
+    .agendamento-titulo h1{
+        font-size: 35px;
+    }
+    .card-agendamento h5{
+        font-size: 20px;
+    }
+    .agendamento_informacoes textarea {
+        height: 170px;
+    }
+}

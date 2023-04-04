@@ -1,0 +1,32 @@
+.exposicao-video img{
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 3px 1px white;
+}
+.nariz{
+    height: 380px;
+}
+
+@media only screen and (max-width: 601px) {
+    .exposicao-img .nariz{
+        height: 200px;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .exposicao-video{
+        display: none;
+    }
+    
+}
+@media only screen and (min-width: 602px) and (max-width: 991px) {
+    .exposicao-img .nariz {
+        height: 300px;
+    }
+    .exposicao-video .exposicao-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
