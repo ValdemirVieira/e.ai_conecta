@@ -15,11 +15,9 @@ function tempoValor(){
    //enviar dados para arquivo utilizando ID
    document.getElementById("valor_metros").innerHTML = calc
 }
-function myFunction(){
-   var pika = document.getElementById("metros").value;
-
-   if(pika <= 10){
-      alert('ola')
+function verificarTempo() {
+   const numero = document.getElementById("metros").value;
+   if ((numero) < 10) {
+     alert("" + numero + " minuto/s é o tempo desejado");
    }
-}
-
+ }
