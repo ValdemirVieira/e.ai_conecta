@@ -23,11 +23,11 @@ nav .nav-wrapper{
 }
 
 h1{
-    padding-bottom: 1020px;
-    padding-left: 340px;
+    padding-left: 150px;
     height: 100px;
     margin: 160px;
     color: white;
+    margin-bottom: 0;
 }
 
 button{
@@ -40,23 +40,25 @@ button{
 
 h4{
     color: white;
-    padding: 100px;
+    padding: 30px;
+    height: 100px;
+    margin-right: 10px;
 }
 
-.card-resumodospedidos{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+
+
 .card-resumodospedidos{
     background: #1B3C93;
     border-radius: 12px;
-    padding: 150px 40px 0 50px;
-    width: 900px;  
-    height: 200px;
-    margin-bottom: 1000px;
-    margin-left: 200px;
-    margin-right: 20px; 
+    width: 500px;
+    height: 190px;
+   margin-bottom: 10px;
     box-shadow: 0.5px 0.5px 3px 1px white;
+}
+
+.resumo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
