@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/resumodospedidos.css">
     <link rel="stylesheet" href="./css/aluguelrobos.css">
-    <link rel="stylesheet" href="./css/robonariz.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
@@ -61,49 +61,37 @@
     </header>
 
         <!-- Ínicio dos resumos dos pedidos-->
-        <section class="agendamento">
-            <div class="agendamento-titulo">
-                <h1>
-                    RESUMO DOS PEDIDOS
-                </h1>
-            </div>
-            <div class="cards-resumo dos pedidos">
-                <div class="card-agendamento">
-                    <h5>
-                       Código do pedido:
-                    </h5>
+       <section class="Resumo dos pedidos">
+         <div class="resumo-título">
+            <h1>RESUMO DOS PEDIDOS</h1>
+         </div>
+
+         <div class="card-resumodospedidos">
+            <div class="card-codigodopedido">
+            <h4>Código do Pedido:</h4>
+
+            <div class="card-resumodospedidos">
+             <div class="card-robos">
+              <h4>Robôs Escolhidos:</h4>
+  
+              <div class="card-resumodospedidos">
+                <div class="card-quantidade">
+                 <h4>Quantidade:</h4>
+
+                 <div class="card-resumodospedidos">
+                    <div class="card-valortotal">
+                     <h4>Valor Total:</h4>
                     
-            
-                <div class="card-agendamento">
-                    <div class="metros-agendamento">
-                        <form>
-                            <h5>Robôs escolhidos:</h5>
-                            <input type="text" id="name" name="name" class="metros"">
-                        </form>   
-                    </div>
-                    
-                    </div>
+       
+   
+               
+          
+                   </div> 
                 </div>
-            </div>
-            <div class="cards-agendamento">
-                <div class="card-agendamento">
-                    <div class="dia-agendamento">
-                        <h5>Quantidade</h5>
-                        <div class="data-agendamento">
-                            <p> Data: <input type="date"></p>
-                            <p> Hora: <input type="time"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-agendamento">
-                    <div class="agendamento_informacoes">
-                        <h5>Valor Total:</h5>
-                        <textarea name="infoadicionais" id="infoadicionais" cols="30" rows="10" placeholder="Coloque aqui, Informações relevantes: ponto de referencia, dificuldades que possivelmente possam ter, etc..." style="resize: none;"></textarea>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
+             </div>
+         </div>
+
+       </section>
         <div class="enviar">
             <button type="submit">Confirmar Pedido</button>
         </div>

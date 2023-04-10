@@ -24,8 +24,39 @@ nav .nav-wrapper{
 
 h1{
     padding-bottom: 1020px;
-    padding-left: 200px;
+    padding-left: 340px;
     height: 100px;
     margin: 160px;
+    color: white;
+}
+
+button{
+    background-color: orangered;
+    margin: 150px;
+    color: white;
+    padding: 5px;
+    height: 45px;
+}
+
+h4{
+    color: white;
+    padding: 100px;
+}
+
+.card-resumodospedidos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-resumodospedidos{
+    background: #1B3C93;
+    border-radius: 12px;
+    padding: 150px 40px 0 50px;
+    width: 900px;  
+    height: 200px;
+    margin-bottom: 1000px;
+    margin-left: 200px;
+    margin-right: 20px; 
+    box-shadow: 0.5px 0.5px 3px 1px white;
 }
 
