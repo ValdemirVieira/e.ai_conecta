@@ -372,12 +372,19 @@ main.cards section.card {
     box-shadow: 0.5px 0.5px 3px 1px white;
     text-align: center;
 }
+
 .botao-tri{
     margin-top:15px ;
     padding: 10px 10px;
     border-radius: 5px;
     border: none;
     color: black;
+}
+.botao-tri:focus, .botao-se:focus {
+    background-color: white;
+}
+.botao-anual:focus{
+    background-color: #da4828;
 }
 .botao-anual{
     margin-top:15px ;
@@ -393,6 +400,12 @@ main.cards section.card {
     border-radius: 5px;
     border: none;
     color: black;
+}
+.botao-tri:hover, .botao-se:hover {
+    background-color: #e0dfdf;
+}
+.botao-anual:hover{
+    background-color:#F34E15;
 }
 
 /***** FOOTER *****/
