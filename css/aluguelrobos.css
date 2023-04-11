@@ -1,6 +1,7 @@
 /**Apresentacao **/
 *{
     color: white;
+    font-family: "Poppins", sans-serif;
 }
 .apresentacao{
     padding-top: 70px;
@@ -140,7 +141,6 @@ input[type=number] {
 }
 .dados-importantes{
     padding: 20px;
-    
     background: #1B3C93;
     box-shadow: 0.5px 0.5px 3px 1px white;
     display: flex;
@@ -287,7 +287,7 @@ input[type=number] {
     }
 }
 
-@media only screen and (min-width: 602px) and (max-width: 991px) {
+@media only screen and (min-width: 603px) and (max-width: 991px) {
     /**Apresentacao**/
     .exposicao{
         flex-direction: column;
