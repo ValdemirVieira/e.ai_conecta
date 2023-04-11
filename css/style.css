@@ -307,6 +307,94 @@ main.cards section.card {
     padding: 30px 0 0 0;
 }
 
+/***** ASSINATURAS *****/
+.assinaturas{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background: linear-gradient(180deg, #132C83  1%, #2A438C 10%,  #455B9C 100%);
+}
+.assinatura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-assinatura h1{
+   align-items: center;
+   text-align: center;
+   color: white;
+   margin-bottom: 50px;
+}
+
+.texto-assinatura{
+    font-size: 13px;
+    margin: 12px 15px;
+    
+}
+.desconto-assinatura{
+    color: white;
+    text-align: center;
+    
+}
+
+.assinatura-trimestral h4, .assinatura-semestral h4 , .assinatura-anual h4{
+    color: #E1845C;
+    text-transform: uppercase;
+}
+.assinatura-trimestral {
+    width: 250px;
+    padding-top: 10px;
+    height: 450px;
+    background-color: #1B3C93;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0.5px 0.5px 3px 1px white;
+    text-align: center;
+}
+.assinatura-anual {
+    width: 300px;
+    padding-top: 10px;
+    height: 500px;
+    background-color: #1B3C93;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0.5px 0.5px 3px 1px white;
+    text-align: center;
+    z-index: 99;
+} 
+.assinatura-anual .anual{
+    padding-top: 20px;
+}
+.assinatura-semestral {
+    width: 250px;
+    padding-top: 10px;
+    height: 450px;
+    background-color: #1B3C93;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0.5px 0.5px 3px 1px white;
+    text-align: center;
+}
+.botao-tri{
+    margin-top:15px ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+.botao-anual{
+    margin-top:15px ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #da4828;
+    color: white;
+}
+.botao-se{
+    margin-top:15px ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
 /***** FOOTER *****/
 
 .page-footer {
