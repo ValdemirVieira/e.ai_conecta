@@ -211,35 +211,64 @@ main.cards section.card {
     text-decoration: none;
     color: white;
 }
-.popup{
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
-    height: 240px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #455b9cec;
+.modal {
     display: none;
-}
-.popup-informacao p{
-    text-transform: none;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.popup-informacao .email-popup{
-    
-    border: 1px solid white !important;
-    border-radius: 10px !important;
-    padding-left: 5px !important;
-}
-.popup-informacao .popup-enviar{
-    color: #F23E16;
-    padding: 5px;
-    width: 100px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100% ;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.288);
+    max-height: 100% !important;
+    font-size: 20px;
+  }
+
+  .modal-content {
+    background-color:#455b9cef;
+    margin: 15% auto;
+    padding: 20px;
+    width: 55%;
+    border: #132C83 1px solid;
     border-radius: 10px;
-    border: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+  .modal-content .email-popup{
+    margin-top: 15px !important;
+    border: 1px solid white !important;
+    border-radius: 5px !important;
+    width: 300px !important;
+    padding-left: 10px !important;
+    color: white;
+    
+  }
+  .modal-content .popup-enviar{
+    color: #F34E15;
+    border-radius: 10px;
+    width: 70px !important;
+    height: 30px !important;
+    border: 0 !important;
+  }
+  .popup-enviar:hover{
+    background-color: rgb(226, 226, 226);
+    color: #F23E16;
+
+  }
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color:gray;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /***** O que é eAi? *****/

@@ -98,29 +98,7 @@
                             oferecendo portabilidade, conectividade e velocidade
                             nos resultados
                         </span>
-                        <button class="mostrar-esconder" >Solicite Agora!</button>
-                        <div  class="popup">
-                            <div class="popup-informacao">
-                                <p>
-                                    Desculpe, robô nao disponível no momento. Gostaria de receber uma notificação via email, quando estiver diponivel?
-                                </p>
-                                <input type="email" class="email-popup" placeholder="Digite email para receber atualização">
-                                <input type="button" value="Enviar" class="popup-enviar">
-                            </div>
-                        </div>
-                           <!-- 
-                        <button><a href="javascript: abrir()"> Solicite Agora!</a>
-                            <div id="popup" class="popup">
-                                <div>
-                                    <p>
-                                        Desculpe, robo nao disponivel no momento. Gostaria de receber uma notificação via email, quando estiver diponivel?
-                                    </p>
-                                    <input type="email">
-                                    <input type="button" value="Enviar">
-                                </div>
-                            </div>
-                        </button>
-                        -->
+                        <button class="mostrar-esconder" id="btn1" >Solicite Agora!</button>
                     </section>
                     <section class="card about col s12 m12 l3">
                         <div class="icon">
@@ -132,18 +110,20 @@
                             para processamento de imagens e contagem
                             automática de objetos
                         </span>
-                        <button class="mostrar-esconder" >Solicite Agora!</button>
-                        <div  class="popup">
-                            <div class="popup-informacao">
-                                <p>
-                                    Desculpe, robô nao disponível no momento. Gostaria de receber uma notificação via email, quando estiver diponivel?
-                                </p>
-                                <input type="email" class="email-popup" placeholder="Digite email para receber atualização">
-                                <input type="button" value="Enviar" class="popup-enviar">
-                            </div>
-                        </div>
+                        <button class="mostraar-esconder" id="btn2">Solicite Agora!</button>
                     </section>
                 </main>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>
+                        Desculpe, robô nao disponível no momento. Gostaria de receber uma notificação via email, quando estiver disponivel?
+                    </p>
+                    <input type="email" class="email-popup" placeholder="Digite email para receber atualização"><br>
+                    <input type="button" value="Enviar" class="popup-enviar">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -183,17 +163,11 @@
         </div>
         <div class="areadepoimento">
             <div class="depoimento">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam assumenda optio dicta, quasi
-                    quos nemo corrupti dolorum ut illo pariatur alias nulla eaque, tempore totam reprehenderit?
-                    Obcaecati odit assumenda inventore quas nemo. Ea, atque in ipsam autem harum cumque assumenda, hic
-                    enim recusandae dignissimos, itaque soluta id excepturi sint.</p>
+                <p>"Eu fiquei impressionada com o serviço da E.Aí usando robôs para desinfecção de ambientes. É incrível ver como a tecnologia pode ser usada para tornar ambientes mais seguros e saudáveis. O processo é rápido e eficaz, e eu me sinto muito mais tranquila sabendo que os ambientes que frequento são desinfetados de forma completa e minuciosa. Recomendo a E.Aí para qualquer pessoa que esteja procurando uma solução de desinfecção de alta qualidade e tecnologicamente avançada."</p>
                 <img src="./image/depoimento1.png" alt="Depoimento1">
             </div>
             <div class="depoimento">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem corporis amet ex, ad similique
-                    porro omnis distinctio at molestiae placeat. Distinctio, rerum blanditiis? Eius quis non
-                    reprehenderit officiis ducimus ex quasi vero accusamus perferendis in tempora optio cupiditate,
-                    soluta deleniti dicta nulla atque hic voluptas doloribus eum beatae alias! Consequatur.</p>
+                <p>"Eu estava preocupada com a higiene em meu local de trabalho, mas a tecnologia inovadora da E.Aí me deixou tranquilo. Seus robôs de desinfecção são incrivelmente eficientes e garantem que o ambiente esteja sempre livre de germes e bactérias. É impressionante ver como a tecnologia pode ser utilizada para garantir a saúde e o bem-estar das pessoas. Parabéns à E.Aí por fornecer um serviço tão importante e de alta qualidade."</p>
                 <img src="./image/depoimento2.png" alt="Depoimento2">
             </div>
         </div>
@@ -211,14 +185,13 @@
                 <h4>Trimestral</h4>
                 <div class="trimestra">
                     <div class="texto-assinatura">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, mollitia!</p>
+                        <p>Seja um assinante agora e receba 10% de desconto em todas as suas compras</p>
                     </div>
                     <div class="desconto-assinatura">
                         <h1>10%</h1>
                     </div>
                     <div class="texto-assinatura">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ipsum. Accusantium vitae
-                            explicabo dignissimos nam distinctio consectetur quis libero molestiae?</p>
+                        <p>Além disso, nossa equipe estará sempre pronta para atender suas necessidades e oferecer um suporte diferenciado. Não perca mais tempo e aproveite agora essa vantagem única!</p>
                     </div>
                 </div>
                 <button class="botao-tri">Vamos começar</button>
@@ -228,14 +201,13 @@
                 <h4>Anual</h4>
                 <div class="anual">
                     <div class="texto-assinatura">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, mollitia!</p>
+                        <p>Seja um assinante agora e receba 20% de desconto em todas as suas compras</p>
                     </div>
                     <div class="desconto-assinatura">
                         <h1>20%</h1>
                     </div>
                     <div class="texto-assinatura">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ipsum. Accusantium vitae
-                            explicabo dignissimos nam distinctio consectetur quis libero molestiae?</p>
+                        <p>Além disso, nossa equipe estará sempre pronta para atender suas necessidades e oferecer um suporte diferenciado. Não perca mais tempo e aproveite agora essa vantagem única!</p>
                     </div>
                     <button class="botao-anual">Vamos começar</button>
                 </div>
@@ -245,14 +217,13 @@
                 <h4>Semestral</h4>
                 <div>
                     <div class="texto-assinatura">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, mollitia!</p>
+                        <p>Seja um assinante agora e receba 15% de desconto em todas as suas compras</p>
                     </div>
                     <div class="desconto-assinatura">
                         <h1>15%</h1>
                     </div>
                     <div class="texto-assinatura">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ipsum. Accusantium vitae
-                            explicabo dignissimos nam distinctio consectetur quis libero molestiae?</p>
+                        <p>Além disso, nossa equipe estará sempre pronta para atender suas necessidades e oferecer um suporte diferenciado. Não perca mais tempo e aproveite agora essa vantagem única!</p>
                     </div>
                 </div>
                 <button class="botao-se">Vamos começar</button>
