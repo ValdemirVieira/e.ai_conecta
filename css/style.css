@@ -207,6 +207,40 @@ main.cards section.card button:hover {
 main.cards section.card {
     box-shadow: 0.5px 0.5px 3px 1px white;
 }
+#produto a {
+    text-decoration: none;
+    color: white;
+}
+.popup{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 240px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #455b9cec;
+    display: none;
+}
+.popup-informacao p{
+    text-transform: none;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.popup-informacao .email-popup{
+    
+    border: 1px solid white !important;
+    border-radius: 10px !important;
+    padding-left: 5px !important;
+}
+.popup-informacao .popup-enviar{
+    color: #F23E16;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0;
+}
 
 /***** O que é eAi? *****/
 
