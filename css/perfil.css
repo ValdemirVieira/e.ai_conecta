@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.nav-wrapper .fa-solid{
+    font-size: 22px;
+    padding-right: 30px;
+}
+#perfil{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+.meu-perfil h1{
+    font-size: 60px;
+}
+.icone{
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+}
+
+.informacao{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card-perfil{
+    background-color: #1B3C93;
+    box-shadow:  0.5px 0.5px 3px 1px white;
+    border-radius: 10px;
+    width: 600px;
+    height: 150px;
+    margin: 10px;
+}
+.pedido , .seguranca, .endereco, .pagamento{
+    display: flex;
+    align-items: center;
+    
+}
+
+.posicao h3{
+    color: white;
+    font-size: 30px;
+}

@@ -229,7 +229,7 @@ main.cards section.card {
     background-color:#455b9cef;
     margin: 15% auto;
     padding: 20px;
-    width: 55%;
+    width: 45%;
     border: #132C83 1px solid;
     border-radius: 10px;
     text-align: center;
@@ -241,20 +241,24 @@ main.cards section.card {
     border-radius: 5px !important;
     width: 300px !important;
     padding-left: 10px !important;
-    color: white;
+    color: grey;
+    background-color: white !important;
     
   }
+.email-popup::placeholder{
+    color: grey;
+}
 .popup-enviar{
-    color: #F34E15;
+    color: white;
     border-radius: 10px;
-    width: 70px !important;
+    background-color: #F34E15;
+    width: 80px !important;
     height: 30px !important;
     border: 0 !important;
 }
 .popup-enviar:hover{
-    background-color: rgb(226, 226, 226);
-    color: #F23E16;
-
+    background-color: #f2754c;
+    color: white;
 }
 
 .close {
@@ -547,7 +551,6 @@ footer .copyright img{
         text-align: center;
     }
     
-	
 	/***** PRODUTO *****/
 	
 	#produto h1 {
