@@ -1,0 +1,56 @@
+
+.historico-título h1{
+    margin-top: 100px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.tabela {
+    background-color: #455B9C;
+    padding: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    background-color: #455B9C;
+    
+}
+
+table,
+td,
+th,
+tr {
+    border: 1px solid rgb(3, 42, 73);
+    border-width:4px;
+    padding: 10px 30px 10px 30px;
+    color: #000000;
+    text-align: center;
+    
+}
+
+th.cabeça {
+    background-color: rgb(45, 126, 201);
+    color: rgb(3, 3, 3);
+    text-transform: uppercase;
+}
+
+td {
+    text-align: center;
+    color: #000000;
+}
+
+table {
+    background-color:#edeef0;
+    height: 10px;
+    padding: 100px;
+    box-shadow: #000000;
+}
+
