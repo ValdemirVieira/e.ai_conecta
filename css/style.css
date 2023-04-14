@@ -223,9 +223,9 @@ main.cards section.card {
     background-color: rgba(0, 0, 0, 0.288);
     max-height: 100% !important;
     font-size: 20px;
-  }
+}
 
-  .modal-content {
+.modal-content {
     background-color:#455b9cef;
     margin: 15% auto;
     padding: 20px;
@@ -234,8 +234,8 @@ main.cards section.card {
     border-radius: 10px;
     text-align: center;
     flex-direction: column;
-  }
-  .modal-content .email-popup{
+}
+.email-popup{
     margin-top: 15px !important;
     border: 1px solid white !important;
     border-radius: 5px !important;
@@ -244,28 +244,27 @@ main.cards section.card {
     color: white;
     
   }
-  .modal-content .popup-enviar{
+.popup-enviar{
     color: #F34E15;
     border-radius: 10px;
     width: 70px !important;
     height: 30px !important;
     border: 0 !important;
-  }
-  .popup-enviar:hover{
+}
+.popup-enviar:hover{
     background-color: rgb(226, 226, 226);
     color: #F23E16;
 
-  }
+}
 
-  .close {
+.close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
 
-  .close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color:gray;
   text-decoration: none;
   cursor: pointer;
@@ -559,6 +558,14 @@ footer .copyright img{
 		
 		height: max-content;
 	}
+    .modal-content {
+        width: 70%;
+    }
+    .email-popup{
+        width: 250px !important;
+    }
+
+    
 
     /***** O que é eAi? *****/
 
@@ -791,6 +798,11 @@ footer .copyright img{
 
     main.cards section.card button {
         font-size: 70%;
+    }
+    .email-popup{
+        width: 270px !important;
+        align-items: center;
+        justify-content: center;
     }
     
     /***** DEPOIMENTOS *****/
