@@ -37,6 +37,32 @@ tr {
     
 }
 
+span1{
+    border: 0px solid black;
+    padding: 5px;
+    background-color: red;
+    color: #000000;
+}
+
+span2{
+
+    border: 0px solid black;
+    padding: 5px;
+    background-color: rgb(168, 158, 158);
+    color: #000000;
+    opacity: 0.5;
+
+}
+
+span3{
+    border: 0px solid black;
+    padding: 5px;
+    background-color:rgb(168, 158, 158);
+    color: #000000;
+    opacity: 0.5;
+}
+
+
 th.cabeça {
     background-color: rgb(45, 126, 201);
     color: rgb(3, 3, 3);
