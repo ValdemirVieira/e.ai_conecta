@@ -56,17 +56,20 @@
       <!-- menu-->
       <main>
         <div class="informacao">
-          <div class="card-perfil">
-            <div class="pedido">
-              <div class="icone">
-                <i class="fa-brands fa-dropbox"></i>
-              </div>
-              <div class="posicao">
-                <h3>Meus pedidos</h3>
-                <p>Historico de pedidos</p>
-              </div>
+            <div class="card-perfil">
+              <a href="./historicodepedidos.html">
+                <div class="pedido">
+                  <div class="icone">
+                    <i class="fa-brands fa-dropbox"></i>
+                  </div>
+                  <div class="posicao">
+                    <h3>Meus pedidos</h3>
+                    <p>Historico de pedidos</p>
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
+          
           
           <div class="card-perfil">
             <div class="seguranca">
@@ -106,14 +109,30 @@
             </div>
           </div>
         </div>
-
-        <div>
-          <i class="fa-solid fa-power-off"></i>
+        
+        <div class="informacao">
+          <div class="sair">
+            <button class="saindo" id="saindo">
+              <i class="fa-solid fa-power-off"></i>
+              Sair
+            </button>
+          </div>
         </div>
       </main>
-
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="frase-modal">
+            <h2>Tem certeza que desjea sair?</h2>
+          </div>
+          <button class="btn-sim">Sim</button>
+          <button class="btn-nao">Não</button>
+        </div>
+        
+      </div>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <script src="./js/main.js"></script>
+      <script src="./js/sair.js"></script>
 </body>
 </html>

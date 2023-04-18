@@ -29,21 +29,86 @@
     align-items: center;
     justify-content: center;
 }
-.card-perfil{
+.informacao .card-perfil{
     background-color: #1B3C93;
     box-shadow:  0.5px 0.5px 3px 1px white;
     border-radius: 10px;
     width: 600px;
     height: 150px;
     margin: 10px;
+    min-width: 430px;
+}
+
+.card-perfil:hover{
+    box-shadow: 0.5px 0.5px 3px 1px#F23E16;
+    transition: 0.5s;
 }
 .pedido , .seguranca, .endereco, .pagamento{
     display: flex;
     align-items: center;
-    
+    width: 100%;
+    height: 100%;
 }
-
+.informacao .icone{
+    align-items: center;
+    justify-content: center;
+}
 .posicao h3{
     color: white;
     font-size: 30px;
+}
+.saindo{
+    border-radius: 10px;
+    border: 0;
+    width: 75px;
+    background-color: #1B3C93;
+    color: white;
+    height: 25px;
+    box-shadow:  0.5px 0.5px 3px 1px white;
+}
+button:focus{
+    background-color: transparent;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100% ;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.288);
+    max-height: 100% !important;
+    font-size: 20px;
+}
+.modal-content {
+    background-color:#455b9cef;
+    margin: 15% auto;
+    padding: 20px;
+    width: 98%;
+    height: 50%;
+    border: #132C83 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+.frase-modal{
+    margin-top: 30px;
+    color: white;
+}
+
+.btn-sim, .btn-nao{
+    background-color: #132C83;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    margin: 5px;
+}
+.btn-sim{
+    box-shadow: 0.5px 0.5px 3px 1px white;
+}
+.btn-nao{
+    box-shadow:0.5px 0.5px 3px 1px #F23E16;
 }

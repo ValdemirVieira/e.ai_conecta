@@ -207,6 +207,36 @@ input[type=number] {
     color: white;
 }
 
+select {
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline;
+    color: black !important;
+    border-radius: 20px;
+}
+.form-dados select option{
+    color: black;
+}
+  
+.campo-pagamento[type="text"] {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+}
+  
+.campo-pagamento[type="submit"] {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 602px) {
     /**Apresentação**/
     .exposicao{

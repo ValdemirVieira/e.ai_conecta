@@ -148,7 +148,13 @@
                         <h5>Dados Pessoais</h5>
                         <input type="text" id="nome" class="nome" placeholder="Nome">
                         <input type='text' id="cpfcnpj" class="cpfcnpj" name='cpfcnpj' onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()' placeholder="CPF/CNPJ" maxlength="18">
-                        <input type="text" id="pagamento" class="pagamento" placeholder="Formas de pagamento">
+                        <select id="pagamento" name="pagamento" onchange="atualizaCampo()">
+                            <option value="">Forma de pagamento</option>
+                            <option value="cartao">Cartão</option>
+                            <option value="pix">Pix</option>
+                            <option value="boleto">Boleto</option>
+                        </select>
+                        
                     </form>
                 </div>
                 <div class="dados-localizar">
@@ -219,5 +225,6 @@
     <script src="./js/preco.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/mascaras.js"></script>
+    <script src="./js/dados.js"></script>
 </body>
 </html>
