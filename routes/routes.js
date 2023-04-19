@@ -13,4 +13,12 @@ router.get('/cadastroCliente', (req, res) => {
     res.render('../views/cadastroCliente');
 });
 
+router.get('/robodesinfeccao', (req, res) => {
+    res.render('../views/robodesinfeccao');
+});
+
+router.get('/resumodospedidos', (req, res) => {
+    res.render('../views/resumodospedidos');
+});
+
 module.exports = router;

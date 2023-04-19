@@ -9,9 +9,9 @@
   <!-- Import Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/resumodospedidos.css">
-  <link rel="stylesheet" href="./css/aluguelrobos.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/resumodospedidos.css">
+  <link rel="stylesheet" href="/public/css/aluguelrobos.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
@@ -23,28 +23,48 @@
   <header>
    
     <ul class="side-nav" id="mobile-demo">
-      <li><a href="./index.html#home">Inicio</a></li>
-      <li><a href="./index.html#produto">Produto</a></li>
-      <li><a href="./index.html#servicos">O que é e.Aí Conecta?</a></li>
-      <li><a href="./loginCliente.html">Login</a></li>
-      <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro</a></li>
+      <li>
+        <a href="./index#home">Inicio</a>
+      </li>
+      <li>
+        <a href="./index#produto">Produto</a>
+      </li>
+      <li>
+        <a href="./index#servicos">O que é e.Aí Conecta?</a>
+      </li>
+      <li>
+        <a href="./loginCliente">Login</a>
+      </li>
+      <li>
+        <a class="waves-effect waves-light btn" href="paginaparceiro">Seja Parceiro</a>
+      </li>
     </ul>
 
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo"><img src="./image/logonovo2.png" alt="logomarca" class="logoMenu"></a>
-          <a href="index.html" data-activates="mobile-demo" class="button-collapse"><i
-              class="material-icons">menu</i></a>
+          <a href="index" class="brand-logo"><img src="/public/image/logonovo2.png" alt="logomarca" class="logoMenu"></a>
+          <a href="index" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="./index.html#home">Inicio</a></li>
-            <li><a href="./index.html#produto">Produto</a></li>
-            <li><a href="./index.html#servicos">O que é e.Aí Conecta?</a></li>
+            <li>
+              <a href="./index#home">Inicio</a>
+            </li>
+            <li>
+              <a href="./index#produto">Produto</a>
+            </li>
+            <li>
+              <a href="./index#servicos">O que é e.Aí Conecta?</a>
+            </li>
             <!-- Dropdown Trigger -->
-            <li><a href="./loginCliente.html">Login</a></li>
+            <li>
+              <a href="./loginCliente">Login</a>
+            </li>
 
-            <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro!</a></li>
-
+            <li>
+              <a class="waves-effect waves-light btn" href="paginaparceiro">Seja Parceiro!</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -107,7 +127,6 @@
   <div class="enviar">
     <button type="submit">Confirmar Pedido</button>
   </div>
-  </main>
 
   <footer class="page-footer">
     <div class="containe">
@@ -124,22 +143,42 @@
         <div class="col l4 m4 s12 redes-sociais">
           <h5 class="white-text">Siga-nos nas redes</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/e.aitecnologiasinteligentes/"><i
-                  class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="grey-text text-lighten-3"
-                href="https://www.linkedin.com/company/eai-tecnologias-inteligentes/"><i
-                  class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/eaitecnologiasinteligentes"><i
-                  class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://www.instagram.com/e.aitecnologiasinteligentes/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://www.linkedin.com/company/eai-tecnologias-inteligentes/">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="https://www.facebook.com/eaitecnologiasinteligentes">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="col l4 m4 s12 app">
           <h5 class="white-text">Em breve disponivel</h5>
           <div class="link-app">
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-google-play"></i></a></li>
-              <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-apple"></i></a></li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">
+                  <i class="fa-brands fa-google-play"></i>
+                </a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">
+                  <i class="fa-brands fa-apple"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -148,7 +187,7 @@
     <div class="footer-copyright">
       <div class="container">
         <div class="copyright">
-          <img src="./image/logonovo2.png" alt="" class="logoMenu">
+          <img src="/public/image/logonovo2.png" alt="" class="logoMenu">
           <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
           <a class="grey-text text-lighten-4 right" href="#!">TERMO DE USO</a>
           <a class="grey-text text-lighten-4 right" href="#!">POLITICA DE PRIVACIDADE</a>
@@ -161,7 +200,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  <script src="./js/main.js"></script>
+  <script src="/public/js/main.js"></script>
 </body>
 
 </html>

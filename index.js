@@ -14,5 +14,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use('/', router);
 app.use('/loginCliente', router);
 app.use('/cadastroCliente', router);
+app.use('/robodesinfeccao', router);
+app.use('/resumodospedidos', router);
 
 app.listen(3000);

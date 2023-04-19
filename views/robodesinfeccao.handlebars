@@ -8,8 +8,8 @@
 	<!-- Import Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/aluguelrobos.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/aluguelrobos.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
@@ -20,27 +20,35 @@
     
     <header>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="./index.html#home">Inicio</a></li>
-            <li><a href="./index.html#produto">Produto</a></li>
-            <li><a href="./index.html.#servicos">O que é e.Aí Conecta?</a></li>
-            <li><a href="./loginCliente.html">Login</a></li>
-            <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro</a></li>
-            
+            <li>
+                <a href="./index#home">Inicio</a>
+            </li>
+            <li>
+                <a href="./index#produto">Produto</a>
+            </li>
+            <li>
+                <a href="./index#servicos">O que é e.Aí Conecta?</a>
+            </li>
+            <li>
+                <a href="./loginCliente">Login</a>
+            </li>
+            <li>
+                <a class="waves-effect waves-light btn" href="paginaparceiro">Seja Parceiro</a>
+            </li>
         </ul>
 
         <div class="navbar-fixed">
-            <!-- Dropdown Structure -->
         
             <nav>
                 <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo"><img src="./image/logonovo2.png" alt="logomarca" class="logoMenu"></a>
-                    <a href="index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <a href="index" class="brand-logo"><img src="/public/image/logonovo2.png" alt="logomarca" class="logoMenu"></a>
+                    <a href="index" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="./index.html#home">Inicio</a></li>
-                        <li><a href="./index.html#produto">Produto</a></li>
-                        <li><a href="./index.html#servicos">O que é e.Aí Conecta?</a></li>
-                        <li><a href="./loginCliente.html">Login</a></li>
-                        <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro!</a></li>
+                        <li><a href="./index#home">Inicio</a></li>
+                        <li><a href="./index#produto">Produto</a></li>
+                        <li><a href="./index#servicos">O que é e.Aí Conecta?</a></li>
+                        <li><a href="./loginCliente">Login</a></li>
+                        <li><a class="waves-effect waves-light btn" href="paginaparceiro">Seja Parceiro!</a></li>
                     </ul>
                 </div>
             </nav>
@@ -50,19 +58,19 @@
     <main>
         <!--Inicio apresentação do produto-->
         <section class="apresentacao ">
-                <div class="exposicao">
-                    <div class="exposicao-img">
-                        <img src="./image/robo.svg" alt="Robo de desinfecção" class="desinfeccao">
+            <div class="exposicao">
+                <div class="exposicao-img">
+                    <img src="/public/image/robo.svg" alt="Robo de desinfecção" class="desinfeccao">
+                </div>
+                <div class="exposicao-direcao">
+                    <div class="exposicao-video">
+                        <iframe width="552" height="262" src="https://www.youtube.com/embed/eTRbofUK10g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <div class="exposicao-direcao">
-                        <div class="exposicao-video">
-                            <iframe width="552" height="262" src="https://www.youtube.com/embed/eTRbofUK10g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="exposicao-texto">
-                            <p>A versao mais nova da Aurora, o Humanoid, emprega Radiação Ultravioleta (UV-C) com eficácia de 99,99% no combate aos microrganismos para desinfectar superfícies e o ar dos ambientes. Durante toda a sua atuação, ele não deixa residuos no ar ou nas superficies dos hambientes. Graças aos seus sensores, com metodos avançados em inteligencia artificial, conseguem detectar a presença humana no hambiente e interrompe o seu funcionamento para garantir a segurança das pessoas!</p>
-                        </div>
+                    <div class="exposicao-texto">
+                        <p>A versao mais nova da Aurora, o Humanoid, emprega Radiação Ultravioleta (UV-C) com eficácia de 99,99% no combate aos microrganismos para desinfectar superfícies e o ar dos ambientes. Durante toda a sua atuação, ele não deixa residuos no ar ou nas superficies dos hambientes. Graças aos seus sensores, com metodos avançados em inteligencia artificial, conseguem detectar a presença humana no hambiente e interrompe o seu funcionamento para garantir a segurança das pessoas!</p>
                     </div>
                 </div>
+            </div>
         </section>
         <!--Fim apresentação do produto-->
         <!-- Inicio Agendamento-->
@@ -105,7 +113,6 @@
                                 <label for="outro">Outro</label>
                             </p>
                         </div>
-                        
                     </form>
                 </div>
                 <div class="card-agendamento">
@@ -137,7 +144,6 @@
                         <h5>Informações adicionais</h5>
                         <textarea name="infoadicionais" id="infoadicionais" cols="30" rows="10" placeholder="Coloque aqui, Informações relevantes: ponto de referencia, dificuldades que possivelmente possam ter, etc..." style="resize: none;"></textarea>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -154,7 +160,6 @@
                             <option value="pix">Pix</option>
                             <option value="boleto">Boleto</option>
                         </select>
-                        
                     </form>
                 </div>
                 <div class="dados-localizar">
@@ -170,7 +175,7 @@
             </div>
         </section>
         <div class="enviar">
-            <button type="submit"><a href="./resumodospedidos.html">agendar serviço</a> </button>
+            <button type="submit"><a href="./resumodospedidos">agendar serviço</a> </button>
         </div>
     </main>
     
@@ -189,18 +194,42 @@
             <div class="col l4 m4 s12 redes-sociais">
               <h5 class="white-text">Siga-nos nas redes</h5>
               <ul>
-                <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/e.aitecnologiasinteligentes/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/company/eai-tecnologias-inteligentes/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-				<li><a class="grey-text text-lighten-3" href="https://www.facebook.com/eaitecnologiasinteligentes"><i class="fa-brands fa-facebook-f"></i></a></li>
-				<li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li>
+                    <a class="grey-text text-lighten-3" href="https://www.instagram.com/e.aitecnologiasinteligentes/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="grey-text text-lighten-3" href="https://www.linkedin.com/company/eai-tecnologias-inteligentes/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+				<li>
+                    <a class="grey-text text-lighten-3" href="https://www.facebook.com/eaitecnologiasinteligentes">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+				<li>
+                    <a class="grey-text text-lighten-3" href="#!">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
               </ul>
             </div>
             <div class="col l4 m4 s12 app">
                 <h5 class="white-text">Em breve disponivel</h5>
 				<div class="link-app">
 					<ul>
-					  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-google-play"></i></a></li>
-					  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-apple"></i></a></li>
+					  <li>
+                        <a class="grey-text text-lighten-3" href="#!">
+                            <i class="fa-brands fa-google-play"></i>
+                        </a>
+                      </li>
+					  <li>
+                        <a class="grey-text text-lighten-3" href="#!">
+                            <i class="fa-brands fa-apple"></i>
+                        </a>
+                      </li>
 					</ul>
 				</div>
             </div>
@@ -209,22 +238,22 @@
         <div class="footer-copyright">
           <div class="container">
 			  <div class="copyright">
-				  <img src="./image/logonovo2.png" alt="" class="logoMenu">
+				  <img src="/public/image/logonovo2.png" alt="" class="logoMenu">
 				  <a class="grey-text text-lighten-4 right" href="#!">FAQ</a>
 				  <a class="grey-text text-lighten-4 right" href="#!">TERMO DE USO</a>
 				  <a class="grey-text text-lighten-4 right" href="#!">POLITICA DE PRIVACIDADE</a>
 			  </div>
           </div>
         </div>
-      </footer>
+    </footer>
     
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     
-    <script src="./js/preco.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/mascaras.js"></script>
-    <script src="./js/dados.js"></script>
+    <script src="/public/js/preco.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/mascaras.js"></script>
+    <script src="/public/js/dados.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,52 +12,46 @@
     <!-- Import Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/resumodospedidos.css">
-    <link rel="stylesheet" href="./css/aluguelrobos.css">
-    <link rel="stylesheet" href="./css/historicodepedidos.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/resumodospedidos.css">
+    <link rel="stylesheet" href="/public/css/aluguelrobos.css">
+    <link rel="stylesheet" href="/public/css/historicodepedidos.css">
     <title>e.AÍ Conecta</title>
 </head>
 
 <body>
     <header>
-        <ul id="dropdown2" class="dropdown-content">
-            <li><a href="loginCliente.html">Cliente</a></li>
-            <li class="divider"></li>
-            <li><a href="loginParceiro.html">Parceiro</a></li>
-        </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="./index.html#home">Inicio</a></li>
-            <li><a href="./index.html#produto">Produto</a></li>
-            <li><a href="./index.html.#servicos">O que é e.Aí Conecta?</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Login<i
-                        class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro</a></li>
-
+            <li><a href="./index#home">Inicio</a></li>
+            <li><a href="./index#produto">Produto</a></li>
+            <li><a href="./index#servicos">O que é e.Aí Conecta?</a></li>
+            <li><a href="./index#assinaturas">Planos/Assinaturas</a></li>
+            <li><a class="waves-effect waves-light btn" href="paginaparceiro">Seja Parceiro</a></li>
         </ul>
 
         <div class="navbar-fixed">
-            <!-- Dropdown Structure -->
-            <ul id="dropdown1" class="dropdown-content">
-                <li><a href="loginCliente.html">Cliente</a></li>
-                <li class="divider"></li>
-                <li><a href="loginParceiro.html">Parceiro</a></li>
-            </ul>
             <nav>
                 <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo"><img src="./image/logonovo2.png" alt="logomarca"
-                            class="logoMenu"></a>
-                    <a href="index.html" data-activates="mobile-demo" class="button-collapse"><i
-                            class="material-icons">menu</i></a>
+                    <a href="index" class="brand-logo"><img src="/public/image/logonovo2.png" alt="logomarca" class="logoMenu"></a>
+                    <a href="index" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="./index.html#home">Inicio</a></li>
-                        <li><a href="./index.html#produto">Produto</a></li>
-                        <li><a href="./index.html#servicos">O que é e.Aí Conecta?</a></li>
+                        <li>
+                            <a href="./index#home">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./index#produto">Produto</a>
+                        </li>
+                        <li>
+                            <a href="./index#servicos">O que é e.Aí Conecta?</a>
+                        </li>
                         <!-- Dropdown Trigger -->
-                        <li><a href="./loginCliente.html">Login</a></li>
+                        <li>
+                            <a href="./loginCliente">Login</a>
+                        </li>
 
-                        <li><a class="waves-effect waves-light btn" href="paginaparceiro.html">Seja Parceiro!</a></li>
-
+                        <li>
+                            <a class="waves-effect waves-light btn" href="paginaparceiro">Seja Parceiro!</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
