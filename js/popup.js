@@ -24,9 +24,4 @@ closeBtn.onclick = function() {
   modal.style.display = "none";
 }
 
-// Quando o usuário clicar em qualquer lugar fora do modal, o modal será fechado
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// a função que fecha o popup esta em assinatura.js
