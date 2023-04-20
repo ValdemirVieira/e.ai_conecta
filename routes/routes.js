@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const cadastro = require('../models/cadastro')
 
 router.get('/', (req, res) => {
     res.render('index');
@@ -19,6 +20,21 @@ router.get('/robodesinfeccao', (req, res) => {
 
 router.get('/resumodospedidos', (req, res) => {
     res.render('../views/resumodospedidos');
+});
+
+router.post('/cadastroCliente', (req, res, next) => {
+
+    cadastro.create({
+        nome: req.body.nome,
+        email: req.body.email,
+        telefone: req.body.telefone,
+        senha_cliente: req.body.senha_cliente
+
+    }).then(function () {
+        res.render('../views/loginCliente')
+    }).catch(function (erro) {
+        res.send('Erro: Cadastro não foi realizado com sucesso!' + erro)
+    })
 });
 
 module.exports = router;

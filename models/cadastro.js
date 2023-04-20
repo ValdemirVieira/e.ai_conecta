@@ -1,6 +1,9 @@
 const db = require('../db/db');
 
-const cadastro = db.sequelize.define('cadastros', {
+const cadastro = db.sequelize.define('cadastro', {
+    idCliente: {
+        type: db.Sequelize.INTEGER
+    },
     nome: {
         type: db.Sequelize.STRING
     },
@@ -10,11 +13,11 @@ const cadastro = db.sequelize.define('cadastros', {
     telefone: {
         type: db.Sequelize.STRING
     },
-    senha: {
+    senha_cliente: {
         type: db.Sequelize.STRING
     }
 })
 
-//cadastro.sync({ force: true })
+cadastro.sync({ force: true })
 
 module.exports = cadastro;
