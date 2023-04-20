@@ -274,62 +274,6 @@ main.cards section.card {
   text-decoration: none;
   cursor: pointer;
 }
-.promocao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 10px;
-}
-.promocoes{
-    background-color: white;
-    width: 350px;
-    height: 125px;
-    margin: 0;
-    margin-left: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.assintura-frase{
-    color: #E1845C ;
-}
-.promocoes i{
-    color: black;
-    font-size: 40px;
-    width: 100%;
-}
-.assine-ja{
-    border: 0;
-    color: white;
-    background-color: #da4828;
-    border-radius: 10px;
-    width: 100px;
-    margin-top: 20px;
-}
-.assine-ja:hover{
-    background-color: #F23E16;
-    color: rgb(236, 234, 234);
-}
-.assine-ja:focus{
-    background-color: #da4828;
-}
-.alinhando{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    width: 100%;
-}
-.icone i{
-    margin-left: 10px;
-}
-.texto-promocao p{
-    color: black;
-    font-size: 18px;
-    padding-left: 5px;
-    text-align: center;
-}
 
 /***** O que é eAi? *****/
 
@@ -553,15 +497,87 @@ main.cards section.card {
 
 .modal1-content{
     background-color:#13379E;
-    margin: 15% auto;
-    padding: 10px;
+    margin: 10% auto;
+    padding: 10px ;
     width: 70%;
-    height: 50%;
+    height: 800px;
+    min-height: 500px;
     box-shadow: 0.5px 0.5px 3px 1px white;;
     border-radius: 10px;
     text-align: center;
     flex-direction: column;
     height: 51%;
+}
+.promocao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.promocoes{
+    background-color: white;
+    width: 350px;
+    height: 125px;
+    margin: 0;
+    margin-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.assinatura-frase{
+    color: #E1845C ;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.plano-trimestral .assinatura-frase, .plano-trimestral .frase-impacto{
+    margin-top: 20px;
+}
+.plano-trimestral .promocao{
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.plano-trimestral .assinatura-frase{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.promocoes i{
+    color: black;
+    font-size: 40px;
+    width: 100%;
+}
+.assine-ja{
+    border: 0;
+    color: white;
+    background-color: #da4828;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.assine-ja:hover{
+    background-color: #F23E16;
+    color: rgb(236, 234, 234);
+}
+.assine-ja:focus{
+    background-color: #da4828;
+}
+.alinhando{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+}
+.icone i{
+    margin-left: 10px;
+}
+.texto-promocao p{
+    color: black;
+    font-size: 18px;
+    padding-left: 5px;
+    text-align: center;
 }
 
 /***** FOOTER *****/
