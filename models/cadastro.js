@@ -4,7 +4,8 @@ const cadastro = db.sequelize.define('cadastro', {
     idCliente: {
         type: db.Sequelize.INTEGER,
         primaryKey: "true",
-        allowNull: "false"
+        allowNull: "false",
+        autoIncrement: "true"
     },
     nome: {
         type: db.Sequelize.STRING,
