@@ -21,6 +21,9 @@ html {
 .row {
     margin-bottom: 0;
 }
+#logado{
+    display: none;
+}
 .nav-wrapper .logoMenu{
     width: 145px;
 }
@@ -497,7 +500,7 @@ main.cards section.card {
 
 .modal1-content{
     background-color:#13379E;
-    margin: 10% auto;
+    margin: 11% auto;
     padding: 10px ;
     width: 70%;
     height: 800px;
