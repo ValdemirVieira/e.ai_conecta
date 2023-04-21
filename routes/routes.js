@@ -44,7 +44,7 @@ router.post('/loginCliente', (req, res, next) => {
         email: req.body.email
 
     }).then(function () {
-        res.render('../views/loginCliente')
+        res.render('../views/index')
     }).catch(function (erro) {
         res.send('Erro: Cadastro não foi realizado com sucesso!' + erro)
     })
