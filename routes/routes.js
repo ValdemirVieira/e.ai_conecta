@@ -37,4 +37,17 @@ router.post('/cadastroCliente', (req, res, next) => {
     })
 });
 
+router.post('/loginCliente', (req, res, next) => {
+
+    cadastro.create({
+        nome: req.body.nome,
+        email: req.body.email
+
+    }).then(function () {
+        res.render('../views/loginCliente')
+    }).catch(function (erro) {
+        res.send('Erro: Cadastro não foi realizado com sucesso!' + erro)
+    })
+});
+
 module.exports = router;
