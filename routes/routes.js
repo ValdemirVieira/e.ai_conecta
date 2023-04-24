@@ -58,7 +58,7 @@ router.post('/loginCliente', (req, res, next) => {
     }).then(function () {
         res.render('../views/index')
     }).catch(function (erro) {
-        res.send('Erro: Login não foi realizado.' + erro)
+        console.log(erro)
     })
 });
 
