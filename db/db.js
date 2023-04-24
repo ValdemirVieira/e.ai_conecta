@@ -1,8 +1,10 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('softex', 'root', '', { dialect: 'mysql', host: 'localhost' });
+const dotenv = require('dotenv').config();
+
+const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, { dialect: 'mysql', host: process.env.DB_HOST });
 
 sequelize.authenticate().then(function () {
-    console.log("conexão realiazda com sucesso")
+    console.log("conexão realizada com sucesso")
 }).catch(function (error) {
     console.log("não está pegando " + error)
 })
