@@ -26,7 +26,7 @@ const cadastro = db.sequelize.define('cadastro', {
         validate: {
             len: [6, 100],
             isStrongPassword: function (value) {
-              const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+              const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?.&])[A-Za-z\d@$!%*?.&]{6,}$/;
               if (!strongPasswordRegex.test(value)) {
                 throw new Error('A senha deve ter 6 letras ou mais, conter letras maiúsculas e minúsculas, conter um caractere especial e ter pelo menos um número.');
               }

@@ -52,13 +52,13 @@ router.post('/cadastroCliente', (req, res, next) => {
 router.post('/loginCliente', (req, res, next) => {
 
     cadastro.create({
-        nome: req.body.nome,
-        email: req.body.email
+        email: req.body.email,
+        senha_cliente: req.body.senha_cliente
 
     }).then(function () {
         res.render('../views/index')
     }).catch(function (erro) {
-        res.send('Erro: Cadastro não foi realizado com sucesso!' + erro)
+        res.send('Erro: Login não foi realizado.' + erro)
     })
 });
 
