@@ -40,6 +40,6 @@ cadastro.beforeCreate(async (user, options) => {
     user.senha_cliente = hashedPassword;
 })
 
-cadastro.sync({ force: true })
+//cadastro.sync({ force: true })
 
 module.exports = cadastro;
