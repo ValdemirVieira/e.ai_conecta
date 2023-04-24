@@ -14,7 +14,11 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use('/', router);
 app.use('/loginCliente', router);
 app.use('/cadastroCliente', router);
+app.use('/perfil', router);
 app.use('/robodesinfeccao', router);
+app.use('/produtos', router);
 app.use('/resumodospedidos', router);
+app.use('/historicodepedidos', router);
+app.use('/recuperarsenhacliente', router);
 
 app.listen(3000);
