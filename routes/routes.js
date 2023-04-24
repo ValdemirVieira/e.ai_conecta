@@ -18,10 +18,6 @@ router.get('/perfil', (req, res) => {
     res.render('../views/perfil');
 });
 
-router.get('/produtos', (req, res) => {
-    res.render('../views/produtos');
-});
-
 router.get('/robodesinfeccao', (req, res) => {
     res.render('../views/robodesinfeccao');
 });
