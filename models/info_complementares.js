@@ -37,4 +37,4 @@ const complemento = db.sequelize.define('info_complementares', {
 
 //agendado.sync({ force: true })
 
-module.exports = agendado;
+module.exports = complemento;
