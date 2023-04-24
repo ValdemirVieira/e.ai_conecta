@@ -45,7 +45,7 @@ router.post('/cadastroCliente', (req, res, next) => {
     }).then(function () {
         res.render('../views/loginCliente')
     }).catch(function (erro) {
-        res.send('Erro: Cadastro não foi realizado com sucesso!' + erro)
+        console.log(erro)
     })
 });
 

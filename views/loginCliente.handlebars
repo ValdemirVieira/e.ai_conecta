@@ -31,10 +31,13 @@
             <div class="box">
                 <h2>Ambiente do Cliente</h2>
                 <form action="/loginCliente" method="POST">
-                    <input type="email" name="email" id="email" onchange="validateFields()" placeholder="Digite seu E-mail">
-                    <input type="password" name="senha_cliente" id="password" onchange="validateFields" placeholder="senha">
+                    <input type="email" name="email" id="email" onchange="validateFields()" placeholder="Digite seu E-mail"  >
+                    <input type="password" name="senha_cliente" id="password" onchange="validateFields" placeholder="senha" >
                     
-                    <button type="button" class="solid" id="login-button" disabled="true"> Entrar</button>
+                    <a href="http://localhost:3000/" class="solid" id="login-button" >Entrar</a>
+                    
+                    
+                    
                 </form>
                 <a href="recuperarsenhacliente">
                     <p>Esqueceu a sua senha?</p>
